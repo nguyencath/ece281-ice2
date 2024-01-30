@@ -114,9 +114,9 @@ begin
         w_sw1 <= '1'; w_sw0 <= '0'; wait for 10 ns;
             assert w_led0 = '1' report "bad sum" severity error;
             assert w_led1 = '0' report "bad carry" severity error;
-       -- w_sw1 <= '1'; w_sw0 <= '1'; wait for 10 ns;
-         --   assert w_led0 = '0' report "bad sum" severity error;
-           -- assert w_led1 = '0' report "bad carry" severity error;
+        w_sw1 <= '1'; w_sw0 <= '1'; wait for 10 ns;
+          assert w_led0 = '0' report "bad sum" severity error;
+            assert w_led1 = '0' report "bad carry" severity error;
          --w_sw1 <= '1'; w_sw0 <= '0'; wait for 10 ns;
            -- assert w_led0 = '1' report "bad sum" severity error;
             --assert w_led1 = '1' report "bad carry" severity error;

@@ -72,5 +72,5 @@ begin
 	-- *concurrent* signal assignments
 	o_S    <= i_A xor i_B;
 	-- TODO:  Carry signal assignment
-	
+	o_Cout <= i_A and i_B;
 end halfAdder_arch;
